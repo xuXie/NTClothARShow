@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC71088721F85C2500519525 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CC71088421F85C2500519525 /* MobileNet.mlmodel */; };
+		CC71088821F85C2500519525 /* NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC71088521F85C2500519525 /* NOTICE.txt */; };
+		CC71088921F85C2500519525 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC71088621F85C2500519525 /* LICENSE.txt */; };
+		CC71089121F85C7700519525 /* AVCamPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71088E21F85C7700519525 /* AVCamPreviewView.m */; };
+		CC71089221F85C7700519525 /* AVCamCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71088F21F85C7700519525 /* AVCamCameraViewController.m */; };
+		CC71089321F85C7700519525 /* AVCamPhotoCaptureDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71089021F85C7700519525 /* AVCamPhotoCaptureDelegate.m */; };
+		CCBCDB2521F6FCE800BFD68B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBCDB2421F6FCE800BFD68B /* AppDelegate.m */; };
+		CCBCDB2A21F6FCE800BFD68B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBCDB2921F6FCE800BFD68B /* ViewController.m */; };
+		CCBCDB2D21F6FCE800BFD68B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBCDB2B21F6FCE800BFD68B /* Main.storyboard */; };
+		CCBCDB2F21F6FCE800BFD68B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCBCDB2E21F6FCE800BFD68B /* Assets.xcassets */; };
+		CCBCDB3221F6FCE800BFD68B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBCDB3021F6FCE800BFD68B /* LaunchScreen.storyboard */; };
+		CCBCDB3521F6FCE800BFD68B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBCDB3421F6FCE800BFD68B /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC71088421F85C2500519525 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		CC71088521F85C2500519525 /* NOTICE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE.txt; sourceTree = "<group>"; };
+		CC71088621F85C2500519525 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		CC71088B21F85C7700519525 /* AVCamPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamPreviewView.h; sourceTree = "<group>"; };
+		CC71088C21F85C7700519525 /* AVCamPhotoCaptureDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamPhotoCaptureDelegate.h; sourceTree = "<group>"; };
+		CC71088D21F85C7700519525 /* AVCamCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamCameraViewController.h; sourceTree = "<group>"; };
+		CC71088E21F85C7700519525 /* AVCamPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamPreviewView.m; sourceTree = "<group>"; };
+		CC71088F21F85C7700519525 /* AVCamCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamCameraViewController.m; sourceTree = "<group>"; };
+		CC71089021F85C7700519525 /* AVCamPhotoCaptureDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamPhotoCaptureDelegate.m; sourceTree = "<group>"; };
+		CCBCDB2021F6FCE800BFD68B /* NTClothARShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTClothARShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCBCDB2321F6FCE800BFD68B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CCBCDB2421F6FCE800BFD68B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CCBCDB2821F6FCE800BFD68B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CCBCDB2921F6FCE800BFD68B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CCBCDB2C21F6FCE800BFD68B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCBCDB2E21F6FCE800BFD68B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCBCDB3121F6FCE800BFD68B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCBCDB3321F6FCE800BFD68B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCBCDB3421F6FCE800BFD68B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCBCDB1D21F6FCE800BFD68B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC71088321F85C2500519525 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC71088421F85C2500519525 /* MobileNet.mlmodel */,
+				CC71088521F85C2500519525 /* NOTICE.txt */,
+				CC71088621F85C2500519525 /* LICENSE.txt */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC71088A21F85C7700519525 /* AVCaram */ = {
+			isa = PBXGroup;
+			children = (
+				CC71088B21F85C7700519525 /* AVCamPreviewView.h */,
+				CC71088E21F85C7700519525 /* AVCamPreviewView.m */,
+				CC71088C21F85C7700519525 /* AVCamPhotoCaptureDelegate.h */,
+				CC71089021F85C7700519525 /* AVCamPhotoCaptureDelegate.m */,
+				CC71088D21F85C7700519525 /* AVCamCameraViewController.h */,
+				CC71088F21F85C7700519525 /* AVCamCameraViewController.m */,
+			);
+			path = AVCaram;
+			sourceTree = "<group>";
+		};
+		CCBCDB1721F6FCE800BFD68B = {
+			isa = PBXGroup;
+			children = (
+				CCBCDB2221F6FCE800BFD68B /* NTClothARShow */,
+				CCBCDB2121F6FCE800BFD68B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCBCDB2121F6FCE800BFD68B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCBCDB2021F6FCE800BFD68B /* NTClothARShow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCBCDB2221F6FCE800BFD68B /* NTClothARShow */ = {
+			isa = PBXGroup;
+			children = (
+				CC71088A21F85C7700519525 /* AVCaram */,
+				CC71088321F85C2500519525 /* Model */,
+				CCBCDB2321F6FCE800BFD68B /* AppDelegate.h */,
+				CCBCDB2421F6FCE800BFD68B /* AppDelegate.m */,
+				CCBCDB2821F6FCE800BFD68B /* ViewController.h */,
+				CCBCDB2921F6FCE800BFD68B /* ViewController.m */,
+				CCBCDB2B21F6FCE800BFD68B /* Main.storyboard */,
+				CCBCDB2E21F6FCE800BFD68B /* Assets.xcassets */,
+				CCBCDB3021F6FCE800BFD68B /* LaunchScreen.storyboard */,
+				CCBCDB3321F6FCE800BFD68B /* Info.plist */,
+				CCBCDB3421F6FCE800BFD68B /* main.m */,
+			);
+			path = NTClothARShow;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCBCDB1F21F6FCE800BFD68B /* NTClothARShow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCBCDB3821F6FCE800BFD68B /* Build configuration list for PBXNativeTarget "NTClothARShow" */;
+			buildPhases = (
+				CCBCDB1C21F6FCE800BFD68B /* Sources */,
+				CCBCDB1D21F6FCE800BFD68B /* Frameworks */,
+				CCBCDB1E21F6FCE800BFD68B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NTClothARShow;
+			productName = NTClothARShow;
+			productReference = CCBCDB2021F6FCE800BFD68B /* NTClothARShow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCBCDB1821F6FCE800BFD68B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = NEXTTAO;
+				TargetAttributes = {
+					CCBCDB1F21F6FCE800BFD68B = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CCBCDB1B21F6FCE800BFD68B /* Build configuration list for PBXProject "NTClothARShow" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCBCDB1721F6FCE800BFD68B;
+			productRefGroup = CCBCDB2121F6FCE800BFD68B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCBCDB1F21F6FCE800BFD68B /* NTClothARShow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCBCDB1E21F6FCE800BFD68B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCBCDB3221F6FCE800BFD68B /* LaunchScreen.storyboard in Resources */,
+				CCBCDB2F21F6FCE800BFD68B /* Assets.xcassets in Resources */,
+				CC71088821F85C2500519525 /* NOTICE.txt in Resources */,
+				CC71088921F85C2500519525 /* LICENSE.txt in Resources */,
+				CCBCDB2D21F6FCE800BFD68B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCBCDB1C21F6FCE800BFD68B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC71089321F85C7700519525 /* AVCamPhotoCaptureDelegate.m in Sources */,
+				CC71088721F85C2500519525 /* MobileNet.mlmodel in Sources */,
+				CCBCDB2A21F6FCE800BFD68B /* ViewController.m in Sources */,
+				CC71089221F85C7700519525 /* AVCamCameraViewController.m in Sources */,
+				CCBCDB3521F6FCE800BFD68B /* main.m in Sources */,
+				CCBCDB2521F6FCE800BFD68B /* AppDelegate.m in Sources */,
+				CC71089121F85C7700519525 /* AVCamPreviewView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CCBCDB2B21F6FCE800BFD68B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCBCDB2C21F6FCE800BFD68B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCBCDB3021F6FCE800BFD68B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCBCDB3121F6FCE800BFD68B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCBCDB3621F6FCE800BFD68B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CCBCDB3721F6FCE800BFD68B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCBCDB3921F6FCE800BFD68B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LXED532595;
+				INFOPLIST_FILE = NTClothARShow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexttao.NTClothARShow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCBCDB3A21F6FCE800BFD68B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LXED532595;
+				INFOPLIST_FILE = NTClothARShow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexttao.NTClothARShow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCBCDB1B21F6FCE800BFD68B /* Build configuration list for PBXProject "NTClothARShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCBCDB3621F6FCE800BFD68B /* Debug */,
+				CCBCDB3721F6FCE800BFD68B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCBCDB3821F6FCE800BFD68B /* Build configuration list for PBXNativeTarget "NTClothARShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCBCDB3921F6FCE800BFD68B /* Debug */,
+				CCBCDB3A21F6FCE800BFD68B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCBCDB1821F6FCE800BFD68B /* Project object */;
+}
