@@ -11,6 +11,7 @@ Implements the view controller for the camera interface.
 #import "AVCamPreviewView.h"
 #import "AVCamPhotoCaptureDelegate.h"
 #import "MobileNet.h"
+#import <AVFoundation/AVFoundation.h>
 
 static void*  SessionRunningContext = &SessionRunningContext;
 static void*  SystemPressureContext = &SystemPressureContext;
@@ -109,6 +110,11 @@ typedef NS_ENUM(NSInteger, AVCamPortraitEffectsMatteDeliveryMode) {
  */
 @property (nonatomic, strong) NSArray *clothsCategories;
 
+@property (nonatomic, strong) UIImageView *clothImageView;//展示图片
+
+@property (strong, nonatomic)AVPlayer *myPlayer;//播放器
+@property (strong, nonatomic)AVPlayerItem *item;//播放单元
+@property (strong, nonatomic)AVPlayerLayer *playerLayer;//播放界面（layer）
 @end
 
 @implementation AVCamCameraViewController
@@ -985,7 +991,31 @@ didFinishRecordingToOutputFileAtURL:(NSURL*)outputFileURL
                         
                         if ([action.title isEqualToString:@"确定"]) {
                             
+                            //展示图片
+                            [self.clothImageView setImage:[UIImage imageNamed:@"cloth"]];
+                            
                             [self.session startRunning];
+                            
+                            //播放视频
+                            if (self.myPlayer) {
+                                
+                                [self.myPlayer pause];
+                                self.myPlayer = nil;
+                                [self.playerLayer removeFromSuperlayer];
+                            }
+                            // 1.获取URL(远程/本地)
+                             NSURL *url = [[NSBundle mainBundle] URLForResource:@"testAir.mp4" withExtension:nil];
+//                            NSURL *url = [NSURL URLWithString:@"http://v1.mukewang.com/a45016f4-08d6-4277-abe6-bcfd5244c201/L.mp4"];
+                            // 2.创建AVPlayerItem
+                            AVPlayerItem *item = [AVPlayerItem playerItemWithURL:url];
+                            // 3.创建AVPlayer
+                            self.myPlayer = [AVPlayer playerWithPlayerItem:item];
+                            // 4.添加AVPlayerLayer
+                            AVPlayerLayer *layer = [AVPlayerLayer playerLayerWithPlayer:self.myPlayer];
+                            layer.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height/2.0);
+                            self.playerLayer = layer;
+                            [self.previewView.layer addSublayer:self.playerLayer];
+                            [self.myPlayer play];
                         }
                     }];
                     [alertController addAction:cancelAction];
@@ -1179,6 +1209,17 @@ didFinishRecordingToOutputFileAtURL:(NSURL*)outputFileURL
 }
 
 #pragma mark 衣服分类校验
+- (UIImageView *)clothImageView{
+    
+    if (!_clothImageView) {
+        
+        UIImageView *clothImageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.previewView.frame.size.width-100, 0, 100, 100)];
+        _clothImageView = clothImageView;
+        [self.previewView addSubview:_clothImageView];
+    }
+    return _clothImageView;
+}
+
 - (BOOL)isClothsCategory:(NSString *)categoryName{
     
     BOOL isExist = NO;
@@ -1295,5 +1336,11 @@ didFinishRecordingToOutputFileAtURL:(NSURL*)outputFileURL
     CVPixelBufferUnlockBaseAddress(pxbuffer, 0);
     
     return pxbuffer;
+}
+
+#pragma mark 在相机上添加视频流
+- (void)d{
+    
+    
 }
 @end

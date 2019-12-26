@@ -13,6 +13,7 @@
 		CC71089121F85C7700519525 /* AVCamPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71088E21F85C7700519525 /* AVCamPreviewView.m */; };
 		CC71089221F85C7700519525 /* AVCamCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71088F21F85C7700519525 /* AVCamCameraViewController.m */; };
 		CC71089321F85C7700519525 /* AVCamPhotoCaptureDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71089021F85C7700519525 /* AVCamPhotoCaptureDelegate.m */; };
+		CC93EFC02222A04B0099D1D6 /* testAir.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CC93EFBF2222A04B0099D1D6 /* testAir.mp4 */; };
 		CCBCDB2521F6FCE800BFD68B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBCDB2421F6FCE800BFD68B /* AppDelegate.m */; };
 		CCBCDB2A21F6FCE800BFD68B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBCDB2921F6FCE800BFD68B /* ViewController.m */; };
 		CCBCDB2D21F6FCE800BFD68B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCBCDB2B21F6FCE800BFD68B /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC5C90B72222C8F6003E744F /* testAir1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = testAir1.m4v; sourceTree = "<group>"; };
 		CC71088421F85C2500519525 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
 		CC71088521F85C2500519525 /* NOTICE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE.txt; sourceTree = "<group>"; };
 		CC71088621F85C2500519525 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -31,6 +33,10 @@
 		CC71088E21F85C7700519525 /* AVCamPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamPreviewView.m; sourceTree = "<group>"; };
 		CC71088F21F85C7700519525 /* AVCamCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamCameraViewController.m; sourceTree = "<group>"; };
 		CC71089021F85C7700519525 /* AVCamPhotoCaptureDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamPhotoCaptureDelegate.m; sourceTree = "<group>"; };
+		CC93EFBF2222A04B0099D1D6 /* testAir.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testAir.mp4; sourceTree = "<group>"; };
+		CC93EFC12222C3440099D1D6 /* testairport.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = testairport.m4v; sourceTree = "<group>"; };
+		CC93EFC22222C4A50099D1D6 /* movietest1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = movietest1.mp4; sourceTree = "<group>"; };
+		CC93EFC32222C5B20099D1D6 /* movietest.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = movietest.m4v; sourceTree = "<group>"; };
 		CCBCDB2021F6FCE800BFD68B /* NTClothARShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTClothARShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBCDB2321F6FCE800BFD68B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CCBCDB2421F6FCE800BFD68B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,6 +113,11 @@
 				CCBCDB3021F6FCE800BFD68B /* LaunchScreen.storyboard */,
 				CCBCDB3321F6FCE800BFD68B /* Info.plist */,
 				CCBCDB3421F6FCE800BFD68B /* main.m */,
+				CC93EFC32222C5B20099D1D6 /* movietest.m4v */,
+				CC93EFC22222C4A50099D1D6 /* movietest1.mp4 */,
+				CC93EFC12222C3440099D1D6 /* testairport.m4v */,
+				CC5C90B72222C8F6003E744F /* testAir1.m4v */,
+				CC93EFBF2222A04B0099D1D6 /* testAir.mp4 */,
 			);
 			path = NTClothARShow;
 			sourceTree = "<group>";
@@ -169,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC93EFC02222A04B0099D1D6 /* testAir.mp4 in Resources */,
 				CCBCDB3221F6FCE800BFD68B /* LaunchScreen.storyboard in Resources */,
 				CCBCDB2F21F6FCE800BFD68B /* Assets.xcassets in Resources */,
 				CC71088821F85C2500519525 /* NOTICE.txt in Resources */,
